@@ -21,6 +21,27 @@ setaAvancar.addEventListener('click', function () {
         return;
     }
 
+    switch (imagemAtual + 1) {
+        case 0:
+            document.getElementById("titulo-painel").innerHTML = "Desenvolvimento Web";
+            console.log(imagemAtual);
+            break;
+        case 1:
+            document.getElementById("titulo-painel").innerHTML = "Desenvolvimento JAVA";
+            console.log(imagemAtual);
+            break;
+        case 2:
+            document.getElementById("titulo-painel").innerHTML = "Linguagem MQL5 (Metatrader)";
+            console.log(imagemAtual);
+            break;
+        case 3:
+            document.getElementById("titulo-painel").innerHTML = "Wordpress e Elementor";
+            console.log(imagemAtual);
+            break;
+        default:
+            document.getElementById("titulo-painel").innerHTML = "Desenvolvimento Web";
+    }
+
     imagemAtual++;
 
     esconderImagens();
@@ -35,8 +56,28 @@ setaVoltar.addEventListener('click', function () {
 
     imagemAtual--;
 
+    switch (imagemAtual) {
+        case 0:
+            document.getElementById("titulo-painel").innerHTML = "Desenvolvimento Web";
+            console.log(imagemAtual);
+            break;
+        case 1:
+            document.getElementById("titulo-painel").innerHTML = "Desenvolvimento JAVA";
+            console.log(imagemAtual);
+            break;
+        case 2:
+            document.getElementById("titulo-painel").innerHTML = "Linguagem MQL5 (Metatrader)";
+            console.log(imagemAtual);
+            break;
+        case 3:
+            document.getElementById("titulo-painel").innerHTML = "Wordpress e Elementor";
+            console.log(imagemAtual);
+            break;
+        default:
+            document.getElementById("titulo-painel").innerHTML = "Desenvolvimento Web";
+    }
+
     esconderImagens();
 
     mostrarImagens();
 })
-
